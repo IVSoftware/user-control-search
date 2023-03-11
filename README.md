@@ -1,4 +1,10 @@
-How you **search for control in flowlayout based on the label text** is a matter of programming style. What I see here is that the object you call "**Generated Panel**" is a candidate to be a custom `UserControl` and this control should expose a public property `FileName` that is what you will use to search.
+There are three potential problems with your code for `guna2TextBox5_TextChanged1.
+1. This method is looking for Label controls in the Controls collection of flowLayoutPanel1 that are actually in the Controls collection of the `Guna2Panel`. A others have pointed out, interating the control tree of flow layout panel _will_ find these labels, but not in a manner that is in any way efficient in terms of a search.
+2. Your post says you want "to search for `titleLab` label" specifically. The current code for matches in "any" `Label`.
+3. Your method is calling `Remove(c)`. But you say that "i want to keep all of the controls" and to do that you would want to set the `Visible` property of the Guna2Panel to `false` instead.
+
+
+One way to address these issues is to create a `UserControl` that would be configured to match the image of "how the panel look like". This control could expose a public property `TitleLabelText` that will make filtering much more efficient.
 
 [![user control][1]][1]
 

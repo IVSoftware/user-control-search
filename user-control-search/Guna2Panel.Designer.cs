@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Guna2Panel));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.labelPath = new System.Windows.Forms.Label();
-            this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.titleLab = new System.Windows.Forms.Label();
+            this.textboxPic = new System.Windows.Forms.PictureBox();
             this.labelDate = new System.Windows.Forms.Label();
-            this.buttonDelete = new System.Windows.Forms.Button();
+            this.remButTxt = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textboxPic)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -44,10 +44,10 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel1.Controls.Add(this.labelPath, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.titleLab, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.textboxPic, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.labelDate, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.buttonDelete, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.remButTxt, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(10, 10);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -58,36 +58,36 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(374, 423);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // labelPath
+            // titleLab
             // 
-            this.labelPath.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.titleLab.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPath.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.labelPath, 2);
-            this.labelPath.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelPath.ForeColor = System.Drawing.Color.White;
-            this.labelPath.Location = new System.Drawing.Point(3, 293);
-            this.labelPath.Name = "labelPath";
-            this.labelPath.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.labelPath.Size = new System.Drawing.Size(368, 70);
-            this.labelPath.TabIndex = 1;
-            this.labelPath.Text = "Untitled (46).png";
-            this.labelPath.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.titleLab.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.titleLab, 2);
+            this.titleLab.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.titleLab.ForeColor = System.Drawing.Color.White;
+            this.titleLab.Location = new System.Drawing.Point(3, 293);
+            this.titleLab.Name = "titleLab";
+            this.titleLab.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.titleLab.Size = new System.Drawing.Size(368, 70);
+            this.titleLab.TabIndex = 1;
+            this.titleLab.Text = "Untitled (46).png";
+            this.titleLab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pictureBox
+            // textboxPic
             // 
-            this.pictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.textboxPic.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.tableLayoutPanel1.SetColumnSpan(this.pictureBox, 2);
-            this.pictureBox.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(368, 287);
-            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox.TabIndex = 2;
-            this.pictureBox.TabStop = false;
+            this.textboxPic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.tableLayoutPanel1.SetColumnSpan(this.textboxPic, 2);
+            this.textboxPic.Location = new System.Drawing.Point(3, 3);
+            this.textboxPic.Name = "textboxPic";
+            this.textboxPic.Size = new System.Drawing.Size(368, 287);
+            this.textboxPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.textboxPic.TabIndex = 2;
+            this.textboxPic.TabStop = false;
             // 
             // labelDate
             // 
@@ -100,18 +100,18 @@
             this.labelDate.TabIndex = 3;
             this.labelDate.Text = "11/03/2023";
             // 
-            // buttonDelete
+            // remButTxt
             // 
-            this.buttonDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.remButTxt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonDelete.BackgroundImage")));
-            this.buttonDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonDelete.Location = new System.Drawing.Point(317, 366);
-            this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(54, 54);
-            this.buttonDelete.TabIndex = 4;
-            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.remButTxt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("remButTxt.BackgroundImage")));
+            this.remButTxt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.remButTxt.Location = new System.Drawing.Point(317, 366);
+            this.remButTxt.Name = "remButTxt";
+            this.remButTxt.Size = new System.Drawing.Size(54, 54);
+            this.remButTxt.TabIndex = 4;
+            this.remButTxt.UseVisualStyleBackColor = true;
             // 
             // Guna2Panel
             // 
@@ -125,7 +125,7 @@
             this.Size = new System.Drawing.Size(394, 443);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textboxPic)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -133,9 +133,9 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label labelPath;
-        private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.Label titleLab;
+        private System.Windows.Forms.PictureBox textboxPic;
         private System.Windows.Forms.Label labelDate;
-        private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.Button remButTxt;
     }
 }

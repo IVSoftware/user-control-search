@@ -16,7 +16,7 @@ namespace user_control_search
         public MainForm()
         {
             InitializeComponent();
-            textBoxSearch.TextChanged += onSearchTextChanged;
+            guna2TextBox5.TextChanged += guna2TextBox5_TextChanged;
         }
         protected override void OnLoad(EventArgs e)
         {
@@ -37,9 +37,9 @@ namespace user_control_search
             }
         }
 
-        private void onSearchTextChanged(object sender, EventArgs e)
+        private void guna2TextBox5_TextChanged(object sender, EventArgs e)
         {
-            if(string.IsNullOrWhiteSpace(textBoxSearch.Text))
+            if(string.IsNullOrWhiteSpace(guna2TextBox5.Text))
             {
                 foreach (var userControl in flowLayoutPanel.Controls.OfType<Guna2Panel>())
                 {
@@ -50,7 +50,7 @@ namespace user_control_search
             {
                 foreach (var userControl in flowLayoutPanel.Controls.OfType<Guna2Panel>())
                 {
-                    userControl.Visible = userControl.FileName.Contains(textBoxSearch.Text, StringComparison.OrdinalIgnoreCase);
+                    userControl.Visible = userControl.TitleLabelText.Contains(guna2TextBox5.Text, StringComparison.OrdinalIgnoreCase);
                 }
             }
         }
