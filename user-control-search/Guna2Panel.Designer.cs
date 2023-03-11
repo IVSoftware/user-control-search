@@ -29,34 +29,34 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Guna2Panel));
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panelTxt = new System.Windows.Forms.TableLayoutPanel();
             this.titleLab = new System.Windows.Forms.Label();
             this.textboxPic = new System.Windows.Forms.PictureBox();
             this.labelDate = new System.Windows.Forms.Label();
             this.remButTxt = new System.Windows.Forms.Button();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.panelTxt.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textboxPic)).BeginInit();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // panelTxt
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel1.Controls.Add(this.titleLab, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textboxPic, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.labelDate, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.remButTxt, 1, 2);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(10, 10);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(374, 423);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.panelTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.panelTxt.ColumnCount = 2;
+            this.panelTxt.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.panelTxt.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.panelTxt.Controls.Add(this.titleLab, 0, 1);
+            this.panelTxt.Controls.Add(this.textboxPic, 0, 0);
+            this.panelTxt.Controls.Add(this.labelDate, 0, 2);
+            this.panelTxt.Controls.Add(this.remButTxt, 1, 2);
+            this.panelTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelTxt.Location = new System.Drawing.Point(10, 10);
+            this.panelTxt.Name = "panelTxt";
+            this.panelTxt.RowCount = 3;
+            this.panelTxt.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.panelTxt.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.panelTxt.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.panelTxt.Size = new System.Drawing.Size(374, 423);
+            this.panelTxt.TabIndex = 0;
             // 
             // titleLab
             // 
@@ -64,7 +64,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.titleLab.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.titleLab, 2);
+            this.panelTxt.SetColumnSpan(this.titleLab, 2);
             this.titleLab.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.titleLab.ForeColor = System.Drawing.Color.White;
             this.titleLab.Location = new System.Drawing.Point(3, 293);
@@ -81,7 +81,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textboxPic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.tableLayoutPanel1.SetColumnSpan(this.textboxPic, 2);
+            this.panelTxt.SetColumnSpan(this.textboxPic, 2);
             this.textboxPic.Location = new System.Drawing.Point(3, 3);
             this.textboxPic.Name = "textboxPic";
             this.textboxPic.Size = new System.Drawing.Size(368, 287);
@@ -118,13 +118,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.panelTxt);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "Guna2Panel";
             this.Padding = new System.Windows.Forms.Padding(10);
             this.Size = new System.Drawing.Size(394, 443);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.panelTxt.ResumeLayout(false);
+            this.panelTxt.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textboxPic)).EndInit();
             this.ResumeLayout(false);
 
@@ -132,7 +132,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel panelTxt;
         private System.Windows.Forms.Label titleLab;
         private System.Windows.Forms.PictureBox textboxPic;
         private System.Windows.Forms.Label labelDate;

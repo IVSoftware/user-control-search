@@ -8,8 +8,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\chair.gray.leather.jpg" />
+    <None Remove="Images\loveseat.brown.leather.jpg" />
+    <None Remove="Images\loveseat.gray.fabric.jpg" />
+    <None Remove="Images\table-and-lamp.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\chair.gray.leather.jpg" />
+    <EmbeddedResource Include="Images\loveseat.brown.leather.jpg" />
+    <EmbeddedResource Include="Images\loveseat.gray.fabric.jpg" />
+    <EmbeddedResource Include="Images\table-and-lamp.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Icon\" />
-    <Folder Include="Images\" />
     <Folder Include="Screenshots\" />
   </ItemGroup>
 
